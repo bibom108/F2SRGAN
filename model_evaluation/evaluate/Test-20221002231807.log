@@ -1,0 +1,22 @@
+2022-10-02 23:18:07,157 - evaluate_sr_results.py[line:96] - INFO: Init...
+2022-10-02 23:18:07,157 - evaluate_sr_results.py[line:97] - INFO: SRFolder - ['Set5', 'Set14']
+2022-10-02 23:18:07,158 - evaluate_sr_results.py[line:98] - INFO: GTFolder - ['../data/GT/Set5', '../data/GT/Set14']
+2022-10-02 23:18:07,158 - evaluate_sr_results.py[line:99] - INFO: SRFolder - ['../data/SR/Set5', '../data/SR/Set14']
+2022-10-02 23:18:07,158 - evaluate_sr_results.py[line:100] - INFO: Metric - ['Ma', 'NIQE', 'PI', 'PSNR', 'SSIM', 'LPIPS']
+2022-10-02 23:18:07,158 - evaluate_sr_results.py[line:101] - INFO: Name - Test
+2022-10-02 23:18:07,159 - evaluate_sr_results.py[line:102] - INFO: Echo - True
+2022-10-02 23:18:07,160 - evaluate_sr_results.py[line:107] - INFO: Calculating Set5...
+2022-10-02 23:19:23,190 - evaluate_sr_results.py[line:124] - INFO: [Set5]    PI - 7.0485395527567585
+2022-10-02 23:19:23,190 - evaluate_sr_results.py[line:125] - INFO: [Set5]    Ma - 4.646737017848832
+2022-10-02 23:19:23,190 - evaluate_sr_results.py[line:126] - INFO: [Set5]  NIQE - 8.743816123362349
+2022-10-02 23:19:23,190 - evaluate_sr_results.py[line:129] - INFO: [Set5]  PSNR - 30.10329772169216
+2022-10-02 23:19:23,190 - evaluate_sr_results.py[line:130] - INFO: [Set5]  SSIM - 0.8676518373280558
+2022-10-02 23:19:23,190 - evaluate_sr_results.py[line:131] - INFO: [Set5] LPIPS - 0.20751901
+2022-10-02 23:19:23,190 - evaluate_sr_results.py[line:107] - INFO: Calculating Set14...
+2022-10-02 23:24:28,659 - evaluate_sr_results.py[line:124] - INFO: [Set14]    PI - 6.077443632025275
+2022-10-02 23:24:28,660 - evaluate_sr_results.py[line:125] - INFO: [Set14]    Ma - 4.604042753847478
+2022-10-02 23:24:28,660 - evaluate_sr_results.py[line:126] - INFO: [Set14]  NIQE - 6.758930017898028
+2022-10-02 23:24:28,660 - evaluate_sr_results.py[line:129] - INFO: [Set14]  PSNR - 26.361892245924626
+2022-10-02 23:24:28,660 - evaluate_sr_results.py[line:130] - INFO: [Set14]  SSIM - 0.7989089737085596
+2022-10-02 23:24:28,660 - evaluate_sr_results.py[line:131] - INFO: [Set14] LPIPS - 0.32113022
+2022-10-02 23:24:29,230 - evaluate_sr_results.py[line:136] - INFO: Done.

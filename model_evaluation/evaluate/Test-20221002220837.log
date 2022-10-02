@@ -1,0 +1,8 @@
+2022-10-02 22:08:38,000 - evaluate_sr_results.py[line:85] - INFO: Init...
+2022-10-02 22:08:38,000 - evaluate_sr_results.py[line:86] - INFO: SRFolder - ['Set5', 'Set14']
+2022-10-02 22:08:38,000 - evaluate_sr_results.py[line:87] - INFO: GTFolder - ['../data/GT/Set5', '../data/GT/Set14']
+2022-10-02 22:08:38,000 - evaluate_sr_results.py[line:88] - INFO: SRFolder - ['../data/SR/Set5', '../data/SR/Set14']
+2022-10-02 22:08:38,000 - evaluate_sr_results.py[line:89] - INFO: Metric - ['Ma', 'NIQE', 'PI', 'PSNR', 'SSIM', 'LPIPS']
+2022-10-02 22:08:38,001 - evaluate_sr_results.py[line:90] - INFO: Name - Test
+2022-10-02 22:08:38,001 - evaluate_sr_results.py[line:91] - INFO: Echo - True
+2022-10-02 22:08:38,002 - evaluate_sr_results.py[line:96] - INFO: Calculating Set5...
