@@ -29,18 +29,11 @@ for ii=1:im_num
     GD_image = modcrop(imread(GD_image_path), scale);
     GD_image = convert_shave_image(GD_image,shave_width);
     
-    if size(input_image) ~= size(GD_image)
-      display(size(input_image), input_image_path)
-      display(size(GD_image), GD_image_path)
-    end
     % Calculating scores
     scores(ii).name = file_list(ii).name;
-    scores(ii).MSE = immse(input_image,GD_image);
     scores(ii).Ma = quality_predict(input_image);
     scores(ii).NIQE = computequality(input_image,blocksizerow,blocksizecol,...
         blockrowoverlap,blockcoloverlap,mu_prisparam,cov_prisparam);
-    scores(ii).PSNR = psnr(input_image, GD_image);
-    [scores(ii).SSIM,scores(ii).SSIM_map] = ssim(input_image, GD_image);
 end
 
 end

@@ -22,5 +22,5 @@ scores = calc_scores(input_dir,GT_dir,shave_width,verbose);
 
 %% Printing results
 perceptual_score = (mean([scores.NIQE]) + (10 - mean([scores.Ma]))) / 2;
-res=[perceptual_score,mean([scores.Ma]),mean([scores.NIQE]),mean([scores.MSE]),sqrt(mean([scores.MSE])),mean([scores.PSNR]),mean([scores.SSIM])];
+res=[perceptual_score,mean([scores.Ma]),mean([scores.NIQE])];
 end

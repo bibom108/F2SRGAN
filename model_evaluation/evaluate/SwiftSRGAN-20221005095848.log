@@ -1,0 +1,18 @@
+2022-10-05 09:58:48,841 - .\evaluate_sr_results.py[line:96] - INFO: Init...
+2022-10-05 09:58:48,853 - .\evaluate_sr_results.py[line:97] - INFO: SRFolder - ['Set5', 'Set14']
+2022-10-05 09:58:48,853 - .\evaluate_sr_results.py[line:98] - INFO: GTFolder - ['../data/GT/Set5', '../data/GT/Set14']
+2022-10-05 09:58:48,854 - .\evaluate_sr_results.py[line:99] - INFO: SRFolder - ['../data/SR/Set5', '../data/SR/Set14']
+2022-10-05 09:58:48,854 - .\evaluate_sr_results.py[line:100] - INFO: Metric - ['Ma', 'NIQE', 'PI', 'PSNR', 'LPIPS']
+2022-10-05 09:58:48,854 - .\evaluate_sr_results.py[line:101] - INFO: Name - SwiftSRGAN
+2022-10-05 09:58:48,854 - .\evaluate_sr_results.py[line:102] - INFO: Echo - True
+2022-10-05 09:58:48,908 - .\evaluate_sr_results.py[line:107] - INFO: Calculating Set5...
+2022-10-05 10:00:59,442 - .\evaluate_sr_results.py[line:120] - INFO: [Set5]    PI - 6.212230567391831
+2022-10-05 10:00:59,442 - .\evaluate_sr_results.py[line:121] - INFO: [Set5]    Ma - 5.010728931329008
+2022-10-05 10:00:59,442 - .\evaluate_sr_results.py[line:122] - INFO: [Set5]  NIQE - 7.43519006611267
+2022-10-05 10:00:59,442 - .\evaluate_sr_results.py[line:123] - INFO: [Set5] LPIPS - 0.16927257
+2022-10-05 10:00:59,442 - .\evaluate_sr_results.py[line:107] - INFO: Calculating Set14...
+2022-10-05 10:07:01,095 - .\evaluate_sr_results.py[line:120] - INFO: [Set14]    PI - 5.345948636702227
+2022-10-05 10:07:01,096 - .\evaluate_sr_results.py[line:121] - INFO: [Set14]    Ma - 4.961139621324146
+2022-10-05 10:07:01,096 - .\evaluate_sr_results.py[line:122] - INFO: [Set14]  NIQE - 5.653036894728599
+2022-10-05 10:07:01,097 - .\evaluate_sr_results.py[line:123] - INFO: [Set14] LPIPS - 0.27435562
+2022-10-05 10:07:02,009 - .\evaluate_sr_results.py[line:128] - INFO: Done.

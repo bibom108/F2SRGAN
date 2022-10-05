@@ -8,5 +8,5 @@ Pairs:
   SRFolder:
     - ../data/SR/Set5
     - ../data/SR/Set14
-Name: Test
+Name: SRGAN
 Echo: True

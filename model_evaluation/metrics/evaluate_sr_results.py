@@ -81,7 +81,7 @@ with open(args.YAML,'r', encoding='UTF-8') as f:
 Datasets=conf['Pairs']['Dataset']
 SRFolder=conf['Pairs']['SRFolder']
 GTFolder=conf['Pairs']['GTFolder']
-Metric=['Ma','NIQE','PI','PSNR','SSIM','LPIPS']
+Metric=['Ma','NIQE','PI','PSNR','LPIPS']
 Name=conf['Name']
 Echo=conf['Echo']
 
@@ -101,7 +101,7 @@ log.logger.info('Metric - '+str(Metric))
 log.logger.info('Name - '+Name)
 log.logger.info('Echo - '+str(Echo))
 
-res = pd.DataFrame(columns=('Ma','NIQE','PI','PSNR','SSIM','LPIPS'))
+res = pd.DataFrame(columns=('Ma','NIQE','PI','LPIPS'))
 
 for i,j,k in zip(Datasets,SRFolder,GTFolder):
     log.logger.info('Calculating '+i+'...')
@@ -112,10 +112,6 @@ for i,j,k in zip(Datasets,SRFolder,GTFolder):
     resDict['PI']=[MATLAB[0]]
     resDict['Ma']=[MATLAB[1]]
     resDict['NIQE']=[MATLAB[2]]
-    # resDict['MSE']=[MATLAB[3]]
-    # resDict['RMSE']=[MATLAB[4]]
-    resDict['PSNR']=[MATLAB[5]]
-    resDict['SSIM']=[MATLAB[6]]
     resDict['LPIPS']=[LPIPS]
     resDataFrame=pd.DataFrame(resDict)
     resDataFrame.index=[i]
@@ -124,10 +120,6 @@ for i,j,k in zip(Datasets,SRFolder,GTFolder):
         log.logger.info('['+i+']    PI - '+str(MATLAB[0]))
         log.logger.info('['+i+']    Ma - '+str(MATLAB[1]))
         log.logger.info('['+i+']  NIQE - '+str(MATLAB[2]))
-        # log.logger.info('['+i+']   MSE - '+str(MATLAB[3]))
-        # log.logger.info('['+i+']  RMSE - '+str(MATLAB[4]))
-        log.logger.info('['+i+']  PSNR - '+str(MATLAB[5]))
-        log.logger.info('['+i+']  SSIM - '+str(MATLAB[6]))
         log.logger.info('['+i+'] LPIPS - '+str(LPIPS))
 
 res.to_csv(os.path.join('../evaluate',output,Name+'.csv'), header=True, index=True)
