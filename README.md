@@ -1,1 +1,1 @@
-# Real-time Image Super Resolution on Embedded System with Deep Learning Approach
+# F2SRGAN: Boosting the SwiftSRGAN with Fast Fourier Convolution for Single Image Super Resolution
