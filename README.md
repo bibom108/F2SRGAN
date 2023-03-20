@@ -1,1 +1,1 @@
-# F2SRGAN: Boosting the SwiftSRGAN with Fast Fourier Convolution for Single Image Super Resolution
+# F2SRGAN: A Lightweight Approach Boosting Perceptual Quality in Single Image Super-Resolution via A Revised Fast Fourier Convolution
