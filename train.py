@@ -14,7 +14,7 @@ class GeneratorLoss(nn.Module):
         self.mae_loss = nn.L1Loss()
 
         if mode == "pre":
-            self.img_to, self.adv_to, self.per_to, self.tv_to = 1, 0.001, 0.006, 2e-8
+            self.img_to, self.adv_to, self.per_to, self.tv_to = 1, 0, 0, 0
         elif mode == "per":
             self.img_to, self.adv_to, self.per_to, self.tv_to = 0, 0, 1, 0
         elif mode == "gan":
