@@ -28,13 +28,13 @@ There are 5 mode of training:
 To replicate the paper's result, first train model with `pre` mode, followed by `full` mode.
 
 # Test
-Pretrained weight for `x2` and `x4` upscale factor are provided in `pretrain_weight`.
-Code for load model:
+Pretrained weight for `x2` and `x4` upscale factor are provided in `pretrain_weight`. Code for load model:
 ```python
+DEVICE = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 SCALE_FACTOR = 4 #Setup scale factor
-MODEL_PATH = './pretrain_weight/F2SRGAN_4x.pt'
-model = Generator(upscale_factor = SCALE_FACTOR)
-model.load_state_dict(torch.load(MODEL_PATH)['model'], strict=True)
+MODEL_PATH = f"./pretrain_weight/F2SRGAN_{SCALE_FACTOR}x.pt"
+netG = Generator(upscale_factor = SCALE_FACTOR)
+netG.load_state_dict(torch.load(MODEL_PATH, map_location=DEVICE)['model'])
 model.eval()
 ```
 

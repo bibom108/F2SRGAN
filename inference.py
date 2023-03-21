@@ -43,7 +43,7 @@ def calc_psnr(sr, hr, scale, rgb_range=255):
 
 def swiftsrgan_psnr_testing(_path, model_path, ds):
     netG = Generator().to(DEVICE)
-    netG.load_state_dict(torch.load(model_path, map_location=torch.device('cpu'))['model'])
+    netG.load_state_dict(torch.load(model_path, map_location=DEVICE)['model'])
     netG.eval()
 
     with torch.no_grad():
@@ -82,9 +82,9 @@ def swiftsrgan_psnr_testing(_path, model_path, ds):
     return valing_results["psnr"]/nums
 
 dataset = ["BSDS100"]
-model_path = "./pretrain_weight/F2SRGAN_4x.pt"
+model_path = f"./pretrain_weight/F2SRGAN_{UPSCALE_FACTOR}x.pt"
 
 for ds in dataset:
-    psnr = swiftsrgan_psnr_testing("./dataset/SR_testing_datasets/" + ds, model_path, ds)
+    psnr = swiftsrgan_psnr_testing("./SR_testing_datasets/" + ds, model_path, ds)
     print(f'PSNR in {ds} = {psnr}')
 
