@@ -10,7 +10,7 @@ SR_training_dataset
 ├── Flickr2K
 └── DIV2K_valid_HR # Include 100 test images
 
-SR_tesing_dataset
+SR_testing_dataset
 ├── Set5
 ├── Set14
 ├── BSDS100
