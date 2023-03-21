@@ -1,6 +1,22 @@
 # F2SRGAN
 This is an official implementation of paper "F2SRGAN: A Lightweight Approach Boosting Perceptual Quality in Single Image Super-Resolution via A Revised Fast Fourier Convolution".
 
+# Data prepare
+You should organize the images layout like this:
+
+```shell
+SR_training_datasets
+├── DIV2K_train_HR
+├── Flickr2K
+└── DIV2K_valid_HR
+
+SR_tesing_datasets
+├── Set5
+├── Set14
+├── BSDS100
+└── Urban100
+```
+
 # Train
 There are 5 mode of training:
 - **pre**: L1 loss only.

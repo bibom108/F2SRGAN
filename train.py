@@ -85,8 +85,8 @@ LR = 1e-4
 RESUME = 0
 MODE = "pre"  # MODE is pre/ per/ gan/ rgan/ full
 
-train_path = ["../input/df2k-ost/train/DIV2K/DIV2K_train_HR", "/kaggle/input/df2k-ost/train/Flickr2K"]
-test_path = ["/kaggle/input/super-resolution-benchmarks/Set5/Set5/original"]
+train_path = ["./SR_training_dataset/DIV2K_train_HR", "./SR_training_dataset/Flickr2K"]
+test_path = ["./SR_training_dataset/DIV2K_valid_HR"]
 
 train_set = TrainWholeDataset(train_path, crop_size=CROP_SIZE, upscale_factor=UPSCALE_FACTOR)
 val_set = ValDataset(test_path, crop_size=CROP_SIZE, upscale_factor=UPSCALE_FACTOR)
