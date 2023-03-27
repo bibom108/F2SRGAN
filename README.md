@@ -43,17 +43,14 @@ model.eval()
 - To measure the Perceptual Index, please refer to this [Repository](https://github.com/roimehrez/PIRM2018) for more information
 
 # Citation
-``
-@ARTICLE{10077589,
-  author={Nguyen, Duc Phuc and Vu, Khanh Hung and Nguyen, Duc Dung and Pham, Hoang-Anh},
-  journal={IEEE Access}, 
-  title={F2SRGAN: A Lightweight Approach Boosting Perceptual Quality in Single Image Super-Resolution via A Revised Fast Fourier Convolution}, 
-  year={2023},
-  volume={},
-  number={},
-  pages={1-1},
+```
+@ARTICLE{10077589,  
+  author={Nguyen, Duc Phuc and Vu, Khanh Hung and Nguyen, Duc Dung and Pham, Hoang-Anh},  
+  journal={IEEE Access},  
+  title={F2SRGAN: A Lightweight Approach Boosting Perceptual Quality in Single Image Super-Resolution via A Revised Fast Fourier Convolution},    
+  year={2023},  
   doi={10.1109/ACCESS.2023.3260159}}
-``
+```
 
 # References
 - [SwiftSRGAN](https://github.com/Koushik0901/Swift-SRGAN)
