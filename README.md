@@ -49,7 +49,8 @@ model.eval()
   journal={IEEE Access},  
   title={F2SRGAN: A Lightweight Approach Boosting Perceptual Quality in Single Image Super-Resolution via A Revised Fast Fourier Convolution},    
   year={2023},  
-  doi={10.1109/ACCESS.2023.3260159}}
+  doi={10.1109/ACCESS.2023.3260159}
+}
 ```
 
 # References
